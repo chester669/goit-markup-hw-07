@@ -21,7 +21,6 @@
     <!-- header -->
     <header class="header">
       <div class="container header-container">
-        <div class="mobile-nav-button">
         <nav class="header_nav">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-end">Studio</span></a
@@ -43,11 +42,11 @@
         </nav>
         <button type="button" class="mobile-menu-button">
           <svg class="mobile-button-icon" width="28" height="18">
-            <use class="header-open-icon" href="./images/icons.svg#icon-mobile-open">
-              
-            </use>
+            <use
+              class="header-open-icon"
+              href="./images/icons.svg#icon-mobile-open"
+            ></use>
           </svg>
-        </div>
         </button>
         <!-- contacts -->
         <address class="data">
@@ -65,19 +64,49 @@
           </ul>
         </address>
       </div>
+      <div class="mobile-backdrop-header">
+      <div class="mobile-modal-header container">
+        <button type="button" class="mobile-close-btn">
+          <svg class="mobile-menu-close" width="8" height="8">
+            <use
+              class="mobile-close-icon"
+              href="./images/icons.svg#icon-close-btn"
+            ></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav"><a href="" class="mobile-nav-link link">Studio</a></li>
+          <li class="mobile-nav"><a href="" class="mobile-nav-lin link">Portfolio</a></li>
+          <li class="mobile-nav"><a href="" class="mobile-nav-link link">Contacts</a></li>
+        </ul>
+        <ul class="mobile-modal-contacts list">
+          <li class="mobile-contact-data">
+            <a class="mobile-data-info link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-contact-data">
+            <a class="mobile-data-info link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+      
+        </ul>
+      </div>
+    </div>
     </header>
     <main>
       <!-- hero -->
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container main-hero">
           <h1 class="hero_title">Effective Solutions for Your Business</h1>
           <button class="order-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- advantages -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="hidden-title" hidden>advantages</h2>
           <ul class="menu-advantages list">
@@ -140,7 +169,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- pictures -->
       <!-- <section class="section-pictures">
         <div class="container">
@@ -174,12 +203,13 @@
         </div>
       </section> -->
       <!-- our team -->
-      <!-- <section class="members section">
+      <section class="members section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-member list">
             <li class="team">
               <img
+                srcset="./images/mobile-img/img@2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="photo of a worker"
                 width="264"
@@ -234,6 +264,7 @@
             </li>
             <li class="team">
               <img
+                srcset="./images/mobile-img/img-2@2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="photo of a worker"
                 width="264"
@@ -288,6 +319,7 @@
             </li>
             <li class="team">
               <img
+                srcset="./images/mobile-img/img-3@2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="photo of a worker"
                 width="264"
@@ -342,6 +374,7 @@
             </li>
             <li class="team">
               <img
+                srcset="./images/mobile-img/img-4@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="photo of a worker"
                 width="264"
@@ -396,9 +429,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- customers -->
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -464,10 +497,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer -->
-    <!-- <footer class="main-footer">
+    <footer class="main-footer">
       <div class="footer-container container">
         <div class="footer-text">
           <a href="./index.html" class="footer-logo link"
@@ -547,7 +580,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- backdrop -->
 
