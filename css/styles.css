@@ -635,9 +635,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     padding: 100px 0;
 }
 
-.sm-icons {
+/* .sm-icons {
     display: flex;
-}
+} */
 
 @media screen and (max-width: 767px) {
     .footer-logo {
@@ -1120,9 +1120,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .mobile-modal-header {
     position: relative;
+    padding: 40px;
 }
+
 .mobile-close-btn {
     position: absolute;
     top: 24px;
@@ -1138,18 +1141,85 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background: #E7E9FC;
 
 }
+
 .mobile-nav-list {
-    padding-top: 80px;
-    padding-left: 40px;
+    padding-top: 40px;
 }
+
+.studio-link {
+    color: #404BBF;
+}
+
+.contacts-link,
+.portfolio-link {
+    color: #2E2F42;
+
+}
+
 .mobile-nav {
     font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-margin-bottom: 40px;
-text-transform: capitalize;
-color: #2E2F42;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    color: #2E2F42;
 
 
+}
+
+.mobile-data-info-phone {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #4D5AE5;
+
+
+}
+
+.mobile-phone {
+    margin-top: 244px;
+}
+
+.mobile-mail {
+    margin-top: 40px;
+}
+
+.mobile-data-info-mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.mobile-media-container {
+    margin-top: 48px;
+
+}
+
+.mobile-media {
+    display: flex;
+    column-gap: 56px;
+}
+
+.media-list {
+    width: 40px;
+    height: 40px;
+}
+
+.medial-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #4D5AE5;
+    border-radius: 50%;
+}
+
+.mobile-media-icon {
+    fill: #F4F4FD;
 }
