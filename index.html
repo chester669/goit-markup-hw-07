@@ -25,10 +25,9 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-end">Studio</span></a
           >
-
           <ul class="menu list">
             <li class="menu-item">
-              <a href="./index.html" class="menu-name studion-active link"
+              <a href="./index.html" class="menu-name studio-active link"
                 >Studio</a
               >
             </li>
@@ -40,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-button">
+        <button type="button" class="mobile-menu-button js-open-menu">
           <svg class="mobile-button-icon" width="28" height="18">
             <use
               class="header-open-icon"
@@ -65,9 +64,9 @@
         </address>
       </div>
       <!-- menu mobile phone -->
-      <div class="mobile-backdrop-header">
+      <div class="mobile-backdrop-header js-menu-container">
         <div class="mobile-modal-header container">
-          <button type="button" class="mobile-close-btn">
+          <button type="button" class="mobile-close-btn js-close-menu">
             <svg class="mobile-menu-close" width="8" height="8">
               <use
                 class="mobile-close-icon"
@@ -77,13 +76,15 @@
           </button>
           <ul class="mobile-nav-list list">
             <li class="mobile-nav">
-              <a href="" class="mobile-nav-link studio-link link">Studio</a>
+              <a href="./index.html" class="mobile-nav-link link">Studio</a>
             </li>
             <li class="mobile-nav">
-              <a href="" class="mobile-nav-link portfolio-link link">Portfolio</a>
+              <a href="./portfolio.html" class="mobile-nav-link link"
+                >Portfolio</a
+              >
             </li>
             <li class="mobile-nav">
-              <a href="" class="mobile-nav-link contacts-link link">Contacts</a>
+              <a href="" class="mobile-nav-link link">Contacts</a>
             </li>
           </ul>
           <ul class="mobile-modal-contacts list">
@@ -101,49 +102,49 @@
             </li>
           </ul>
           <div class="mobile-media-container">
-          <ul class="mobile-media list">
-            <li class="media-list">
-              <a href="" class="medial-link">
-                <svg class="media-icons" width="24" height="24">
-                  <use
-                    class="mobile-media-icon"
-                    href="./images/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-list">
-              <a href="" class="medial-link">
-                <svg class="media-icons" width="24" height="24">
-                  <use
-                    class="mobile-media-icon"
-                    href="./images/icons.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-list">
-              <a href="" class="medial-link">
-                <svg class="media-icons" width="24" height="24">
-                  <use
-                    class="mobile-media-icon"
-                    href="./images/icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-list">
-              <a href="" class="medial-link">
-                <svg class="media-icons" width="24" height="24">
-                  <use
-                    class="mobile-media-icon"
-                    href="./images/icons.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+            <ul class="mobile-media list">
+              <li class="media-list">
+                <a href="" class="medial-link">
+                  <svg class="media-icons" width="24" height="24">
+                    <use
+                      class="mobile-media-icon"
+                      href="./images/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-list">
+                <a href="" class="medial-link">
+                  <svg class="media-icons" width="24" height="24">
+                    <use
+                      class="mobile-media-icon"
+                      href="./images/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-list">
+                <a href="" class="medial-link">
+                  <svg class="media-icons" width="24" height="24">
+                    <use
+                      class="mobile-media-icon"
+                      href="./images/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-list">
+                <a href="" class="medial-link">
+                  <svg class="media-icons" width="24" height="24">
+                    <use
+                      class="mobile-media-icon"
+                      href="./images/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -223,7 +224,7 @@
         </div>
       </section>
       <!-- pictures -->
-      <!-- <section class="section-pictures">
+      <section class="section-pictures section">
         <div class="container">
           <h2 class="about-us">What are we doing</h2>
           <ul class="pictures list">
@@ -253,20 +254,51 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- our team -->
       <section class="members section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-member list">
             <li class="team">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-img/phone-team3.jpg    1x,
+                    ./images/mobile-img/phone-team3@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <source
+                  srcset="
+                    ./images/table-studio/table-team3.jpg    1x,
+                    ./images/table-studio/table-team3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/computer-img/computer-team-3.jpg     1x,
+                    ./images/computer-img/computer-team3@2x-3.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+
+                <img
+                  srcset="./images/mobile-img/phone-team3@2x.jpg"
+                  src="./images/mobile-img/"
+                  alt="photo of a worker"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+              <!-- <img
                 srcset="./images/mobile-img/img@2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="photo of a worker"
                 width="264"
                 height="260"
-              />
+              /> -->
               <div class="card-title">
                 <h3 class="names">Mark Guerrero</h3>
                 <p class="description">Product Designer</p>
@@ -315,13 +347,38 @@
               </div>
             </li>
             <li class="team">
-              <img
-                srcset="./images/mobile-img/img-2@2x.jpg 2x"
-                src="./images/img1.jpg"
-                alt="photo of a worker"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-img/phone-team2.jpg    1x,
+                    ./images/mobile-img/phone-team2@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <source
+                  srcset="
+                    ./images/table-studio/table-team2.jpg    1x,
+                    ./images/table-studio/table-team2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/computer-img/computer-team2.jpg      1x,
+                    ./images/computer-img/computer-team2@2x-3.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+
+                <img
+                  srcset="./images/mobile-img/phone-team2@2x.jpg 2x"
+                  src="./images/img1.jpg"
+                  alt="photo of a worker"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-title">
                 <h3 class="names">Tom Ford</h3>
                 <p class="description">Frontend Developer</p>
@@ -370,13 +427,37 @@
               </div>
             </li>
             <li class="team">
-              <img
-                srcset="./images/mobile-img/img-3@2x.jpg 2x"
-                src="./images/img2.jpg"
-                alt="photo of a worker"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-img/phone-team1.jpg    1x,
+                    ./images/mobile-img/phone-team1@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <source
+                  srcset="
+                    ./images/table-studio/table-team1.jpg    1x,
+                    ./images/table-studio/table-team1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/computer-img/computer-team1.jpg      1x,
+                    ./images/computer-img/computer-team1@2x-3.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  srcset="./images/mobile-img/phone-team1@2x.jpg 2x"
+                  src="./images/img2.jpg"
+                  alt="photo of a worker"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-title">
                 <h3 class="names">Camila Garcia</h3>
                 <p class="description">Marketing</p>
@@ -425,13 +506,37 @@
               </div>
             </li>
             <li class="team">
-              <img
-                srcset="./images/mobile-img/img-4@2x.jpg 2x"
-                src="./images/img3.jpg"
-                alt="photo of a worker"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-img/phone-team4.jpg    1x,
+                    ./images/mobile-img/phone-team4@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)"
+                />
+                <source
+                  srcset="
+                    ./images/table-studio/table-team4.jpg    1x,
+                    ./images/table-studio/table-team4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/computer-img/computer-team4.jpg      1x,
+                    ./images/computer-img/computer-team4@2x-3.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  srcset="./images/mobile-img/phone-team4@2x.jpg 2x"
+                  src="./images/img3.jpg"
+                  alt="photo of a worker"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-title">
                 <h3 class="names">Daniel Wilson</h3>
                 <p class="description">UI Designer</p>
@@ -609,17 +714,20 @@
           </ul>
         </div>
         <div class="footer-client-info">
-          <p class="subscribe">Subscribe</p>
-          <form class="footer-client-form">
-            <label class="modal-user-info">
-              <input
-                class="footer-email"
-                type="email"
-                name="user-email"
-                placeholder="E-mail"
-              />
-            </label>
-
+          <div class="footer-email-container">
+            <p class="subscribe">Subscribe</p>
+            <form class="footer-client-form">
+              <label class="modal-user-info">
+                <input
+                  class="footer-email"
+                  type="email"
+                  name="user-email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </form>
+          </div>
+          <div class="footer-button-container">
             <button class="footer-button" type="submit">
               Subscribe
               <svg class="footer-button-svg" width="24" height="24">
@@ -629,14 +737,14 @@
                 ></use>
               </svg>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </footer>
 
     <!-- backdrop -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
           <svg class="close-btn" width="8" height="8">
@@ -728,15 +836,17 @@
                     class="checkmark-icon"
                     href="./images/icons.svg#icon-checkmark"
                   ></use></svg></span
-              >I accept the terms and conditions of the
+              ><span class="private-policy-text"
+                >I accept the terms and conditions of the</span
+              >
               <a class="link-color" href="">Privacy Policy</a>
             </label>
           </div>
           <button class="modal-user-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
-
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu-js"></script>
   </body>
 </html>

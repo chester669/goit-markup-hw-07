@@ -26,12 +26,10 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-end">Studio</span></a
           >
-
           <ul class="menu list">
             <li class="menu-item">
               <a href="./index.html" class="menu-name link">Studio</a>
             </li>
-
             <li class="menu-item">
               <a class="menu-name portfolio-active link" href="./portfolio.html"
                 >Portfolio</a
@@ -42,6 +40,14 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-button js-open-menu">
+          <svg class="mobile-button-icon" width="28" height="18">
+            <use
+              class="header-open-icon"
+              href="./images/icons.svg#icon-mobile-open"
+            ></use>
+          </svg>
+        </button>
         <!-- contacts -->
         <address class="data">
           <ul class="contacts list">
@@ -57,6 +63,90 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!-- menu mobile phone -->
+      <div class="mobile-backdrop-header js-menu-container">
+        <div class="mobile-modal-header container container-photo">
+          <button type="button" class="mobile-close-btn js-close-menu">
+            <svg class="mobile-menu-close" width="8" height="8">
+              <use
+                class="mobile-close-icon"
+                href="./images/icons.svg#icon-close-btn"
+              ></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav-list list">
+            <li class="mobile-nav">
+              <a href="./index.html" class="mobile-nav-link link">Studio</a>
+            </li>
+            <li class="mobile-nav">
+              <a href="./portfolio.html" class="mobile-nav-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-nav">
+              <a href="" class="mobile-nav-link link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mobile-modal-contacts list">
+            <li class="mobile-contact-data mobile-phone">
+              <a class="mobile-data-info-phone link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contact-data mobile-mail">
+              <a
+                class="mobile-data-info-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <div class="mobile-media-container">
+            <ul class="mobile-media list">
+              <li class="media-list">
+                <a href="" class="medial-link">
+                  <svg class="media-icons" width="24" height="24">
+                    <use
+                      class="mobile-media-icon"
+                      href="./images/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-list">
+                <a href="" class="medial-link">
+                  <svg class="media-icons" width="24" height="24">
+                    <use
+                      class="mobile-media-icon"
+                      href="./images/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-list">
+                <a href="" class="medial-link">
+                  <svg class="media-icons" width="24" height="24">
+                    <use
+                      class="mobile-media-icon"
+                      href="./images/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-list">
+                <a href="" class="medial-link">
+                  <svg class="media-icons" width="24" height="24">
+                    <use
+                      class="mobile-media-icon"
+                      href="./images/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- hero -->
@@ -76,13 +166,36 @@
           <!-- line 1 -->
           <ul class="portfolio-pictures list">
             <li class="technologies">
-              <a href="" class="picture link">
-                <div class="text-overlay">
-                  <img
-                    src="./images/portfolio_img/banking-app.jpg"
-                    alt="banking app"
-                  />
-
+              <a class="picture link" href=""
+                ><div class="text-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-app.jpg    1x,
+                        ./images/mobile-img/phone-app@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-app    1x,
+                        ./images/table-pictures-portfolio/table-app@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-app    1x,
+                        ./images/computer-portfolio/computer-app@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-app@2x.jpg"
+                      src="./images/mobile-img/phone-app.jpg"
+                      alt="banking app"
+                    />
+                  </picture>
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -98,10 +211,34 @@
             <li class="technologies">
               <a class="picture link" href=""
                 ><div class="text-overlay">
-                  <img
-                    src="./images/portfolio_img/cashless.jpg"
-                    alt="banking-app"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-payment.jpg    1x,
+                        ./images/mobile-img/phone-payment@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-payment    1x,
+                        ./images/table-pictures-portfolio/table-payment@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-payment    1x,
+                        ./images/computer-portfolio/computer-payment@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-payment@2x.jpg"
+                      src="./images/mobile-img/phone-payment.jpg"
+                      alt="banking-app"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -118,10 +255,34 @@
             <li class="technologies">
               <a class="picture link" href=""
                 ><div class="text-overlay">
-                  <img
-                    src="./images/portfolio_img/meditation.jpg"
-                    alt="Meditation"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-computer.jpg    1x,
+                        ./images/mobile-img/phone-computer@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-computer    1x,
+                        ./images/table-pictures-portfolio/table-computer@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-computer    1x,
+                        ./images/computer-portfolio/computer-computer@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-computer@2x.jpg"
+                      src="./images/mobile-img/phone-computer.jpg"
+                      alt="Meditation"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -139,7 +300,34 @@
             <li class="technologies">
               <a class="picture link" href="">
                 <div class="text-overlay">
-                  <img src="./images/portfolio_img/taxi.jpg" alt="taxi" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-taxi.jpg    1x,
+                        ./images/mobile-img/phone-taxi@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-taxi    1x,
+                        ./images/table-pictures-portfolio/table-taxi@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-taxi    1x,
+                        ./images/computer-portfolio/computer-taxi@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-taxi@2x.jpg"
+                      src="./images/mobile-img/phone-taxi.jpg"
+                      alt="Meditation"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -156,10 +344,34 @@
             <li class="technologies">
               <a class="picture link" href="">
                 <div class="text-overlay">
-                  <img
-                    src="./images/portfolio_img/screen.jpg"
-                    alt="phone screen"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-phone.jpg    1x,
+                        ./images/mobile-img/phone-phone@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-phone    1x,
+                        ./images/table-pictures-portfolio/table-phone@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-phone    1x,
+                        ./images/computer-portfolio/computer-phone@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-phone@2x.jpg"
+                      src="./images/mobile-img/phone-phone.jpg"
+                      alt="Meditation"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -176,10 +388,34 @@
             <li class="technologies">
               <a class="picture link" href="">
                 <div class="text-overlay">
-                  <img
-                    src="./images/portfolio_img/courses.jpg"
-                    alt="Online Courses"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-courses.jpg    1x,
+                        ./images/mobile-img/phone-courses@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-courses    1x,
+                        ./images/table-pictures-portfolio/table-courses@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-courses    1x,
+                        ./images/computer-portfolio/computer-courses@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-courses@2x.jpg"
+                      src="./images/mobile-img/phone-courses.jpg"
+                      alt="Meditation"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -197,10 +433,34 @@
             <li class="technologies">
               <a class="picture link" href="">
                 <div class="text-overlay">
-                  <img
-                    src="./images/portfolio_img/inst.jpg"
-                    alt="Instagram Stories"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-inst.jpg    1x,
+                        ./images/mobile-img/phone-inst@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-inst    1x,
+                        ./images/table-pictures-portfolio/table-inst@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-inst    1x,
+                        ./images/computer-portfolio/computer-inst@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-inst@2x.jpg"
+                      src="./images/mobile-img/phone-inst.jpg"
+                      alt="Meditation"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -217,10 +477,34 @@
             <li class="technologies">
               <a class="picture link" href="">
                 <div class="text-overlay">
-                  <img
-                    src="./images/portfolio_img/food.jpg"
-                    alt="Organic Food"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-food.jpg    1x,
+                        ./images/mobile-img/phone-food@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-food    1x,
+                        ./images/table-pictures-portfolio/table-food@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-food    1x,
+                        ./images/computer-portfolio/computer-food@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-food@2x.jpg"
+                      src="./images/mobile-img/phone-food.jpg"
+                      alt="Meditation"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -237,7 +521,34 @@
             <li class="technologies">
               <a class="picture link" href="">
                 <div class="text-overlay">
-                  <img src="./images/portfolio_img/coffee.jpg" alt="Coffee" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-img/phone-coffee.jpg    1x,
+                        ./images/mobile-img/phone-coffee@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/table-pictures-portfolio/table-coffee    1x,
+                        ./images/table-pictures-portfolio/table-coffee@2x 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/computer-portfolio/computer-coffee    1x,
+                        ./images/computer-portfolio/computer-coffee@2x 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <img
+                      srcset="./images/mobile-img/phone-coffee@2x.jpg"
+                      src="./images/mobile-img/phone-coffee.jpg"
+                      alt="Meditation"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -274,7 +585,7 @@
               <a href="" class="sm-general footer-icon">
                 <svg class="sm-icons" width="24" height="24">
                   <use
-                    class="sm-general-icon"
+                    class="sm-icon"
                     href="./images/icons.svg#icon-instagram"
                   ></use>
                 </svg>
@@ -313,18 +624,20 @@
           </ul>
         </div>
         <div class="footer-client-info">
-          <p class="subscribe">Subscribe</p>
-          <form class="footer-client-form">
-            <!-- <span class="footer-input-button"> -->
-            <label class="modal-user-info">
-              <input
-                class="footer-email"
-                type="email"
-                name="user-email"
-                placeholder="E-mail"
-              />
-            </label>
-            <!-- <span class="button-icon"> -->
+          <div class="footer-email-container">
+            <p class="subscribe">Subscribe</p>
+            <form class="footer-client-form">
+              <label class="modal-user-info">
+                <input
+                  class="footer-email"
+                  type="email"
+                  name="user-email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </form>
+          </div>
+          <div class="footer-button-container">
             <button class="footer-button" type="submit">
               Subscribe
               <svg class="footer-button-svg" width="24" height="24">
@@ -334,11 +647,10 @@
                 ></use>
               </svg>
             </button>
-            <!-- </span> -->
-            <!-- </span> -->
-          </form>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu-js"></script>
   </body>
 </html>
